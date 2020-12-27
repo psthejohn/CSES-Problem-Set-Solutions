@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Introductory_Weird_Algorithm{
+   public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        solver(num);
+     }
+     private static void solver(int num){
+        System.out.print(num);
+         while(num!=1){
+             if(num%2==0){
+                 num/=2;
+                 System.out.print(num+" ");
+             }else{
+                 num*=3+2;
+                 System.out.print(num+" ");
+             }
+         }
+     }
+}
